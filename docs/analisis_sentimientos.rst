@@ -1,3 +1,7 @@
+0. **Procesamiento Inicial de Fuentes:**
+   * Construcción de críterios y aplicación.
+   * Selección de fuentes.
+
 1. **Configuración del Entorno:**
    * Configura un entorno virtual para tu proyecto si es necesario para mantener las dependencias aisladas.
    * Instala las bibliotecas y paquetes necesarios. Para el análisis de sentimientos,
@@ -17,10 +21,11 @@
      - Lematización o derivación (convertir palabras a su forma base).
 
 4. **Análisis de Sentimientos:** 
-   * Utiliza una biblioteca de análisis de sentimientos o un modelo de aprendizaje automático
-     para determinar la polaridad de los textos. Algunas bibliotecas populares son TextBlob o VADER,
-     o puedes entrenar tu propio modelo si tienes suficientes datos etiquetados.
-
+  * Diseño de propuesta de nubes de palabras.
+   * Diseño de propuestas validación por punto.
+   * Construcción de ecuación de correspondencia. Utiliza una biblioteca de análisis de sentimientos o un modelo de aprendizaje automático para determinar la polaridad de los textos. Algunas bibliotecas populares son TextBlob o VADER,
+     o puedes entrenar tu propio modelo si tienes suficientes datos etiquetado .
+ 
 5. **Visualización de Resultados:** 
    * Presenta los resultados de tu análisis de sentimientos de manera comprensible,
      como gráficos de barras, nubes de palabras, o cualquier otra visualización que sea relevante.
@@ -50,4 +55,8 @@ References:
 `.. NLTK: https://www.nltk.org`
 `.. Libro NLTK: https://www.nltk.org/book`
 
-    
+Recomendados:
+
+Análisis de Correspondencia.
+Análisis de Precisión.
+Precisión vs recall.

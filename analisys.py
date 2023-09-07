@@ -13,5 +13,14 @@ if not nltk.data.find('tokenizers/punkt'):
     print("Instalando punkt...\n")
     nltk.download('punkt')
 
+
+class ProcessText:
+    "Class for the processing analisys of cloud word"
+    __name__ = 'feelings.process_cloud_word'
+
+    def __init__(self, text,):
+        pass
+
+
 if __name__ == "__main__":
     print("Iniciando análisis...")

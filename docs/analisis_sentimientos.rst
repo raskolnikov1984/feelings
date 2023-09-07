@@ -47,5 +47,7 @@
 
 References:
 
-`.. Libro NLTK: https://www.nltk.org/`
+`.. NLTK: https://www.nltk.org`
+`.. Libro NLTK: https://www.nltk.org/book`
+
     

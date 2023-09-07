@@ -44,3 +44,8 @@
 10. **Gestión de Dependencias y Entrega:**
     * Asegúrate de que todas las dependencias estén correctamente gestionadas y crea un entorno virtual reproducible.
     Si es necesario, empaqueta tu proyecto para su distribución.
+
+References:
+
+`.. Libro NLTK: https://www.nltk.org/`
+    

@@ -1,0 +1,932 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<office:document xmlns:presentation="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0" xmlns:css3t="http://www.w3.org/TR/css3-text/" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:rpt="http://openoffice.org/2005/report" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" office:version="1.3" office:mimetype="application/vnd.oasis.opendocument.spreadsheet">
+ <office:meta><meta:creation-date>2023-09-06T23:01:18.829139398</meta:creation-date><dc:date>2023-09-06T23:49:31.196427228</dc:date><meta:editing-duration>PT48M13S</meta:editing-duration><meta:editing-cycles>1</meta:editing-cycles><meta:generator>LibreOffice/7.4.7.2$Linux_X86_64 LibreOffice_project/40$Build-2</meta:generator><meta:document-statistic meta:table-count="1" meta:cell-count="175" meta:object-count="0"/></office:meta>
+ <office:settings>
+  <config:config-item-set config:name="ooo:view-settings">
+   <config:config-item config:name="VisibleAreaTop" config:type="int">0</config:config-item>
+   <config:config-item config:name="VisibleAreaLeft" config:type="int">0</config:config-item>
+   <config:config-item config:name="VisibleAreaWidth" config:type="int">31126</config:config-item>
+   <config:config-item config:name="VisibleAreaHeight" config:type="int">79705</config:config-item>
+   <config:config-item-map-indexed config:name="Views">
+    <config:config-item-map-entry>
+     <config:config-item config:name="ViewId" config:type="string">view1</config:config-item>
+     <config:config-item-map-named config:name="Tables">
+      <config:config-item-map-entry config:name="Hoja1">
+       <config:config-item config:name="CursorPositionX" config:type="int">0</config:config-item>
+       <config:config-item config:name="CursorPositionY" config:type="int">35</config:config-item>
+       <config:config-item config:name="ActiveSplitRange" config:type="short">2</config:config-item>
+       <config:config-item config:name="PositionLeft" config:type="int">0</config:config-item>
+       <config:config-item config:name="PositionRight" config:type="int">0</config:config-item>
+       <config:config-item config:name="PositionTop" config:type="int">0</config:config-item>
+       <config:config-item config:name="PositionBottom" config:type="int">0</config:config-item>
+       <config:config-item config:name="ZoomType" config:type="short">0</config:config-item>
+       <config:config-item config:name="ZoomValue" config:type="int">95</config:config-item>
+       <config:config-item config:name="PageViewZoomValue" config:type="int">60</config:config-item>
+       <config:config-item config:name="ShowGrid" config:type="boolean">true</config:config-item>
+       <config:config-item config:name="AnchoredTextOverflowLegacy" config:type="boolean">false</config:config-item>
+      </config:config-item-map-entry>
+     </config:config-item-map-named>
+     <config:config-item config:name="ActiveTable" config:type="string">Hoja1</config:config-item>
+     <config:config-item config:name="HorizontalScrollbarWidth" config:type="int">1848</config:config-item>
+     <config:config-item config:name="ZoomType" config:type="short">0</config:config-item>
+     <config:config-item config:name="ZoomValue" config:type="int">95</config:config-item>
+     <config:config-item config:name="PageViewZoomValue" config:type="int">60</config:config-item>
+     <config:config-item config:name="ShowPageBreakPreview" config:type="boolean">false</config:config-item>
+     <config:config-item config:name="ShowZeroValues" config:type="boolean">true</config:config-item>
+     <config:config-item config:name="ShowNotes" config:type="boolean">true</config:config-item>
+     <config:config-item config:name="ShowGrid" config:type="boolean">true</config:config-item>
+     <config:config-item config:name="GridColor" config:type="int">12632256</config:config-item>
+     <config:config-item config:name="ShowPageBreaks" config:type="boolean">true</config:config-item>
+     <config:config-item config:name="HasColumnRowHeaders" config:type="boolean">true</config:config-item>
+     <config:config-item config:name="FormulaBarHeight" config:type="short">1</config:config-item>
+     <config:config-item config:name="IsOutlineSymbolsSet" config:type="boolean">true</config:config-item>
+     <config:config-item config:name="IsValueHighlightingEnabled" config:type="boolean">false</config:config-item>
+     <config:config-item config:name="IsSnapToRaster" config:type="boolean">false</config:config-item>
+     <config:config-item config:name="RasterIsVisible" config:type="boolean">false</config:config-item>
+     <config:config-item config:name="RasterResolutionX" config:type="int">1000</config:config-item>
+     <config:config-item config:name="RasterResolutionY" config:type="int">1000</config:config-item>
+     <config:config-item config:name="RasterSubdivisionX" config:type="int">1</config:config-item>
+     <config:config-item config:name="RasterSubdivisionY" config:type="int">1</config:config-item>
+     <config:config-item config:name="IsRasterAxisSynchronized" config:type="boolean">true</config:config-item>
+     <config:config-item config:name="AnchoredTextOverflowLegacy" config:type="boolean">false</config:config-item>
+    </config:config-item-map-entry>
+   </config:config-item-map-indexed>
+  </config:config-item-set>
+  <config:config-item-set config:name="ooo:configuration-settings">
+   <config:config-item config:name="AllowPrintJobCancel" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="ApplyUserData" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="AutoCalculate" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="CharacterCompressionType" config:type="short">0</config:config-item>
+   <config:config-item config:name="EmbedAsianScriptFonts" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="EmbedComplexScriptFonts" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="EmbedFonts" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="EmbedLatinScriptFonts" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="EmbedOnlyUsedFonts" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="GridColor" config:type="int">12632256</config:config-item>
+   <config:config-item config:name="HasColumnRowHeaders" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="HasSheetTabs" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="ImagePreferredDPI" config:type="int">0</config:config-item>
+   <config:config-item config:name="IsDocumentShared" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="IsKernAsianPunctuation" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="IsOutlineSymbolsSet" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="IsRasterAxisSynchronized" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="IsSnapToRaster" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="LinkUpdateMode" config:type="short">3</config:config-item>
+   <config:config-item config:name="LoadReadonly" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrinterName" config:type="string">Generic Printer</config:config-item>
+   <config:config-item config:name="PrinterPaperFromSetup" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrinterSetup" config:type="base64Binary">mAH+/0dlbmVyaWMgUHJpbnRlcgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAU0dFTlBSVAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWAAMAuQAAAAAAAAAIAFZUAAAkbQAASm9iRGF0YSAxCnByaW50ZXI9R2VuZXJpYyBQcmludGVyCm9yaWVudGF0aW9uPVBvcnRyYWl0CmNvcGllcz0xCmNvbGxhdGU9ZmFsc2UKbWFyZ2luYWRqdXN0bWVudD0wLDAsMCwwCmNvbG9yZGVwdGg9MjQKcHNsZXZlbD0wCnBkZmRldmljZT0xCmNvbG9yZGV2aWNlPTAKUFBEQ29udGV4dERhdGEKUGFnZVNpemU6TGV0dGVyAAASAENPTVBBVF9EVVBMRVhfTU9ERQ8ARHVwbGV4TW9kZTo6T2Zm</config:config-item>
+   <config:config-item config:name="RasterIsVisible" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="RasterResolutionX" config:type="int">1000</config:config-item>
+   <config:config-item config:name="RasterResolutionY" config:type="int">1000</config:config-item>
+   <config:config-item config:name="RasterSubdivisionX" config:type="int">1</config:config-item>
+   <config:config-item config:name="RasterSubdivisionY" config:type="int">1</config:config-item>
+   <config:config-item config:name="SaveThumbnail" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="SaveVersionOnClose" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="ShowGrid" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="ShowNotes" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="ShowPageBreaks" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="ShowZeroValues" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="SyntaxStringRef" config:type="short">7</config:config-item>
+   <config:config-item config:name="UpdateFromTemplate" config:type="boolean">true</config:config-item>
+   <config:config-item-map-named config:name="ScriptConfiguration">
+    <config:config-item-map-entry config:name="Hoja1">
+     <config:config-item config:name="CodeName" config:type="string">Hoja1</config:config-item>
+    </config:config-item-map-entry>
+   </config:config-item-map-named>
+  </config:config-item-set>
+ </office:settings>
+ <office:scripts>
+  <office:script script:language="ooo:Basic">
+   <ooo:libraries xmlns:ooo="http://openoffice.org/2004/office" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </office:script>
+ </office:scripts>
+ <office:font-face-decls>
+  <style:font-face style:name="Calibri" svg:font-family="Calibri" style:font-family-generic="roman" style:font-pitch="variable"/>
+  <style:font-face style:name="Calibri1" svg:font-family="Calibri" style:font-pitch="variable"/>
+  <style:font-face style:name="DengXian" svg:font-family="DengXian" style:font-family-generic="roman" style:font-pitch="variable"/>
+  <style:font-face style:name="DengXian1" svg:font-family="DengXian" style:font-pitch="variable"/>
+  <style:font-face style:name="Droid Sans Devanagari" svg:font-family="&apos;Droid Sans Devanagari&apos;" style:font-family-generic="system" style:font-pitch="variable"/>
+  <style:font-face style:name="Droid Sans Fallback" svg:font-family="&apos;Droid Sans Fallback&apos;" style:font-family-generic="system" style:font-pitch="variable"/>
+  <style:font-face style:name="Liberation Sans" svg:font-family="&apos;Liberation Sans&apos;" style:font-family-generic="swiss" style:font-pitch="variable"/>
+ </office:font-face-decls>
+ <office:styles>
+  <style:default-style style:family="table-cell">
+   <style:paragraph-properties style:tab-stop-distance="1.25cm"/>
+   <style:text-properties style:font-name="Liberation Sans" fo:font-size="10pt" fo:language="es" fo:country="CO" style:font-name-asian="Droid Sans Fallback" style:font-size-asian="10pt" style:language-asian="zh" style:country-asian="CN" style:font-name-complex="Droid Sans Devanagari" style:font-size-complex="10pt" style:language-complex="hi" style:country-complex="IN"/>
+  </style:default-style>
+  <number:number-style style:name="N0">
+   <number:number number:min-integer-digits="1"/>
+  </number:number-style>
+  <style:style style:name="Default" style:family="table-cell"/>
+  <style:style style:name="Heading" style:family="table-cell" style:parent-style-name="Default">
+   <style:text-properties fo:color="#000000" fo:font-size="24pt" fo:font-style="normal" fo:font-weight="bold" style:font-size-asian="24pt" style:font-style-asian="normal" style:font-weight-asian="bold" style:font-size-complex="24pt" style:font-style-complex="normal" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="Heading_20_1" style:display-name="Heading 1" style:family="table-cell" style:parent-style-name="Heading">
+   <style:text-properties fo:font-size="18pt" style:font-size-asian="18pt" style:font-size-complex="18pt"/>
+  </style:style>
+  <style:style style:name="Heading_20_2" style:display-name="Heading 2" style:family="table-cell" style:parent-style-name="Heading">
+   <style:text-properties fo:font-size="12pt" style:font-size-asian="12pt" style:font-size-complex="12pt"/>
+  </style:style>
+  <style:style style:name="Text" style:family="table-cell" style:parent-style-name="Default"/>
+  <style:style style:name="Note" style:family="table-cell" style:parent-style-name="Text">
+   <style:table-cell-properties fo:background-color="#ffffcc" style:diagonal-bl-tr="none" style:diagonal-tl-br="none" fo:border="0.74pt solid #808080"/>
+   <style:text-properties fo:color="#333333"/>
+  </style:style>
+  <style:style style:name="Footnote" style:family="table-cell" style:parent-style-name="Text">
+   <style:text-properties fo:color="#808080" fo:font-style="italic" style:font-style-asian="italic" style:font-style-complex="italic"/>
+  </style:style>
+  <style:style style:name="Hyperlink" style:family="table-cell" style:parent-style-name="Text">
+   <style:text-properties fo:color="#0000ee" style:text-underline-style="solid" style:text-underline-width="auto" style:text-underline-color="#0000ee"/>
+  </style:style>
+  <style:style style:name="Status" style:family="table-cell" style:parent-style-name="Default"/>
+  <style:style style:name="Good" style:family="table-cell" style:parent-style-name="Status">
+   <style:table-cell-properties fo:background-color="#ccffcc"/>
+   <style:text-properties fo:color="#006600"/>
+  </style:style>
+  <style:style style:name="Neutral" style:family="table-cell" style:parent-style-name="Status">
+   <style:table-cell-properties fo:background-color="#ffffcc"/>
+   <style:text-properties fo:color="#996600"/>
+  </style:style>
+  <style:style style:name="Bad" style:family="table-cell" style:parent-style-name="Status">
+   <style:table-cell-properties fo:background-color="#ffcccc"/>
+   <style:text-properties fo:color="#cc0000"/>
+  </style:style>
+  <style:style style:name="Warning" style:family="table-cell" style:parent-style-name="Status">
+   <style:text-properties fo:color="#cc0000"/>
+  </style:style>
+  <style:style style:name="Error" style:family="table-cell" style:parent-style-name="Status">
+   <style:table-cell-properties fo:background-color="#cc0000"/>
+   <style:text-properties fo:color="#ffffff" fo:font-weight="bold" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="Accent" style:family="table-cell" style:parent-style-name="Default">
+   <style:text-properties fo:font-weight="bold" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="Accent_20_1" style:display-name="Accent 1" style:family="table-cell" style:parent-style-name="Accent">
+   <style:table-cell-properties fo:background-color="#000000"/>
+   <style:text-properties fo:color="#ffffff"/>
+  </style:style>
+  <style:style style:name="Accent_20_2" style:display-name="Accent 2" style:family="table-cell" style:parent-style-name="Accent">
+   <style:table-cell-properties fo:background-color="#808080"/>
+   <style:text-properties fo:color="#ffffff"/>
+  </style:style>
+  <style:style style:name="Accent_20_3" style:display-name="Accent 3" style:family="table-cell" style:parent-style-name="Accent">
+   <style:table-cell-properties fo:background-color="#dddddd"/>
+  </style:style>
+  <style:style style:name="Result" style:family="table-cell" style:parent-style-name="Default">
+   <style:text-properties fo:font-style="italic" style:text-underline-style="solid" style:text-underline-width="auto" style:text-underline-color="font-color" fo:font-weight="bold" style:font-style-asian="italic" style:font-weight-asian="bold" style:font-style-complex="italic" style:font-weight-complex="bold"/>
+  </style:style>
+ </office:styles>
+ <office:automatic-styles>
+  <style:style style:name="co1" style:family="table-column">
+   <style:table-column-properties fo:break-before="auto" style:column-width="2.995cm"/>
+  </style:style>
+  <style:style style:name="co2" style:family="table-column">
+   <style:table-column-properties fo:break-before="auto" style:column-width="9.049cm"/>
+  </style:style>
+  <style:style style:name="co3" style:family="table-column">
+   <style:table-column-properties fo:break-before="auto" style:column-width="8.798cm"/>
+  </style:style>
+  <style:style style:name="co4" style:family="table-column">
+   <style:table-column-properties fo:break-before="auto" style:column-width="7.288cm"/>
+  </style:style>
+  <style:style style:name="co5" style:family="table-column">
+   <style:table-column-properties fo:break-before="auto" style:column-width="2.258cm"/>
+  </style:style>
+  <style:style style:name="ro1" style:family="table-row">
+   <style:table-row-properties style:row-height="0.529cm" fo:break-before="auto" style:use-optimal-row-height="true"/>
+  </style:style>
+  <style:style style:name="ro2" style:family="table-row">
+   <style:table-row-properties style:row-height="2.027cm" fo:break-before="auto" style:use-optimal-row-height="true"/>
+  </style:style>
+  <style:style style:name="ro3" style:family="table-row">
+   <style:table-row-properties style:row-height="1.236cm" fo:break-before="auto" style:use-optimal-row-height="true"/>
+  </style:style>
+  <style:style style:name="ro4" style:family="table-row">
+   <style:table-row-properties style:row-height="4.396cm" fo:break-before="auto" style:use-optimal-row-height="true"/>
+  </style:style>
+  <style:style style:name="ro5" style:family="table-row">
+   <style:table-row-properties style:row-height="2.817cm" fo:break-before="auto" style:use-optimal-row-height="true"/>
+  </style:style>
+  <style:style style:name="ro6" style:family="table-row">
+   <style:table-row-properties style:row-height="2.817cm" fo:break-before="auto" style:use-optimal-row-height="true"/>
+  </style:style>
+  <style:style style:name="ro7" style:family="table-row">
+   <style:table-row-properties style:row-height="2.027cm" fo:break-before="auto" style:use-optimal-row-height="true"/>
+  </style:style>
+  <style:style style:name="ro8" style:family="table-row">
+   <style:table-row-properties style:row-height="2.027cm" fo:break-before="auto" style:use-optimal-row-height="true"/>
+  </style:style>
+  <style:style style:name="ro9" style:family="table-row">
+   <style:table-row-properties style:row-height="1.632cm" fo:break-before="auto" style:use-optimal-row-height="true"/>
+  </style:style>
+  <style:style style:name="ro10" style:family="table-row">
+   <style:table-row-properties style:row-height="3.21cm" fo:break-before="auto" style:use-optimal-row-height="true"/>
+  </style:style>
+  <style:style style:name="ro11" style:family="table-row">
+   <style:table-row-properties style:row-height="2.027cm" fo:break-before="auto" style:use-optimal-row-height="true"/>
+  </style:style>
+  <style:style style:name="ro12" style:family="table-row">
+   <style:table-row-properties style:row-height="0.452cm" fo:break-before="auto" style:use-optimal-row-height="true"/>
+  </style:style>
+  <style:style style:name="ta1" style:family="table" style:master-page-name="Default">
+   <style:table-properties table:display="true" style:writing-mode="lr-tb"/>
+  </style:style>
+  <style:style style:name="ce1" style:family="table-cell" style:parent-style-name="Default">
+   <style:table-cell-properties fo:wrap-option="wrap" style:vertical-align="top"/>
+  </style:style>
+  <style:style style:name="ce2" style:family="table-cell" style:parent-style-name="Default">
+   <style:text-properties style:use-window-font-color="true" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Calibri" fo:font-size="12pt" style:rfc-language-tag="es-ES-u-co-trad" fo:language="es" fo:country="ES" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:text-underline-mode="continuous" style:text-overline-mode="continuous" style:text-line-through-mode="continuous" style:font-name-asian="Calibri1" style:font-size-asian="12pt" style:language-asian="en" style:country-asian="US" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Calibri" style:font-size-complex="12pt" style:language-complex="ar" style:country-complex="SA" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none" style:text-overline-style="none" style:text-overline-color="font-color"/>
+  </style:style>
+  <style:style style:name="ce3" style:family="table-cell" style:parent-style-name="Default">
+   <style:text-properties style:use-window-font-color="true" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="DengXian" fo:font-size="10pt" fo:language="es" fo:country="CO" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:text-underline-mode="continuous" style:text-overline-mode="continuous" style:text-line-through-mode="continuous" style:font-name-asian="DengXian1" style:font-size-asian="12pt" style:language-asian="es" style:country-asian="MX" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="DengXian" style:font-size-complex="10pt" style:language-complex="ar" style:country-complex="SA" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none" style:text-overline-style="none" style:text-overline-color="font-color"/>
+  </style:style>
+  <style:style style:name="ce7" style:family="table-cell" style:parent-style-name="Default">
+   <style:table-cell-properties fo:wrap-option="wrap" style:vertical-align="top"/>
+  </style:style>
+  <style:style style:name="ce8" style:family="table-cell" style:parent-style-name="Default">
+   <style:text-properties style:use-window-font-color="true" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Calibri" fo:font-size="12pt" style:rfc-language-tag="es-ES-u-co-trad" fo:language="es" fo:country="ES" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:text-underline-mode="continuous" style:text-overline-mode="continuous" style:text-line-through-mode="continuous" style:font-name-asian="Calibri1" style:font-size-asian="12pt" style:language-asian="en" style:country-asian="US" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Calibri" style:font-size-complex="12pt" style:language-complex="ar" style:country-complex="SA" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none" style:text-overline-style="none" style:text-overline-color="font-color"/>
+  </style:style>
+  <style:style style:name="ce9" style:family="table-cell" style:parent-style-name="Default">
+   <style:text-properties style:use-window-font-color="true" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="DengXian" fo:font-size="10pt" fo:language="es" fo:country="CO" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:text-underline-mode="continuous" style:text-overline-mode="continuous" style:text-line-through-mode="continuous" style:font-name-asian="DengXian1" style:font-size-asian="12pt" style:language-asian="es" style:country-asian="MX" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="DengXian" style:font-size-complex="10pt" style:language-complex="ar" style:country-complex="SA" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none" style:text-overline-style="none" style:text-overline-color="font-color"/>
+  </style:style>
+  <style:page-layout style:name="pm1">
+   <style:page-layout-properties style:writing-mode="lr-tb"/>
+   <style:header-style>
+    <style:header-footer-properties fo:min-height="0.75cm" fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-bottom="0.25cm"/>
+   </style:header-style>
+   <style:footer-style>
+    <style:header-footer-properties fo:min-height="0.75cm" fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0.25cm"/>
+   </style:footer-style>
+  </style:page-layout>
+  <style:style style:name="T1" style:family="text">
+   <style:text-properties style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Liberation Sans" fo:font-size="10pt" fo:language="es" fo:country="CO" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:text-underline-mode="continuous" style:text-overline-mode="continuous" style:text-line-through-mode="continuous" style:font-name-asian="Droid Sans Fallback" style:font-size-asian="10pt" style:language-asian="zh" style:country-asian="CN" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Droid Sans Devanagari" style:font-size-complex="10pt" style:language-complex="hi" style:country-complex="IN" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none" style:text-overline-style="none" style:text-overline-color="font-color"/>
+  </style:style>
+  <style:style style:name="T2" style:family="text">
+   <style:text-properties style:font-name="Liberation Sans" fo:font-size="10pt" fo:font-weight="normal" style:text-underline-style="none" style:text-underline-color="font-color" style:text-line-through-type="none" fo:font-style="normal" style:text-outline="false" fo:text-shadow="none" style:text-line-through-mode="continuous" fo:language="es" fo:country="CO" style:language-asian="zh" style:country-asian="CN" style:language-complex="hi" style:country-complex="IN" style:font-name-asian="Droid Sans Fallback" style:font-name-complex="Droid Sans Devanagari" style:font-size-asian="10pt" style:font-size-complex="10pt" style:font-weight-asian="normal" style:font-weight-complex="normal" style:font-style-asian="normal" style:font-style-complex="normal" style:text-emphasize="none" style:font-relief="none" style:text-overline-style="none" style:text-overline-color="font-color"/>
+  </style:style>
+ </office:automatic-styles>
+ <office:master-styles>
+  <style:master-page style:name="Default" style:page-layout-name="pm1">
+   <style:header>
+    <text:p><text:sheet-name>???</text:sheet-name></text:p>
+   </style:header>
+   <style:header-left style:display="false"/>
+   <style:header-first style:display="false"/>
+   <style:footer>
+    <text:p>Página <text:page-number>1</text:page-number></text:p>
+   </style:footer>
+   <style:footer-left style:display="false"/>
+   <style:footer-first style:display="false"/>
+  </style:master-page>
+ </office:master-styles>
+ <office:body>
+  <office:spreadsheet>
+   <table:calculation-settings table:automatic-find-labels="false" table:use-regular-expressions="false" table:use-wildcards="true"/>
+   <table:table table:name="Hoja1" table:style-name="ta1">
+    <table:table-column table:style-name="co1" table:default-cell-style-name="ce7"/>
+    <table:table-column table:style-name="co2" table:default-cell-style-name="ce7"/>
+    <table:table-column table:style-name="co3" table:default-cell-style-name="ce7"/>
+    <table:table-column table:style-name="co4" table:default-cell-style-name="ce7"/>
+    <table:table-column table:style-name="co1" table:default-cell-style-name="ce7"/>
+    <table:table-column table:style-name="co5" table:default-cell-style-name="Default"/>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Tema</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Propuesta principal</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Propuesta específica</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Secuencia de palabras</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Puntos</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce8"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro2">
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Medellín es territorio de paz (Sectorial)</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Medellín será ejemplo de territorialización de paz.</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Consolidar un sistema distrital de justicia restaurativa, reparación territorial y reincorporación en la ciudad, que genere condiciones para garantizar a las víctimas el derecho a la verdad, la justicia y la reparación, así como para la reincorporación de firmantes de paz.</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>justicia restaurativa, medidas restaurativas, reparación territorial, reincorporaciones firmantes (Sinónimos)</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p> </text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce8"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro3">
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Medellín es territorio de paz (Sectorial)</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Medellín será ejemplo de territorialización de paz.</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Medellín requiere que su ordenamiento territorial incorpore un enfoque de paz, que favorezca la reparación territorial.</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>reparación territorial</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p> </text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce8"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro4">
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Medellín es territorio de paz (Sectorial)</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Medellín será ejemplo de territorialización de paz.</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Innovar en la reparación de víctimas y la implementación de medidas restaurativas, desde la garantía a la población de los territorios altamente afectados por la violencia y las víctimas del conflicto que habitan en Medellín, el acceso a planes, programas y proyectos integrales de desarrollo urbano, a través de la implementación de políticas y mecanismos como mejoramiento integral barrial, el Plan Estratégico Habitacional de Medellín, la política pública de protección a moradores y la gestión del riesgo de desastres.</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>reparación víctimas, justicia restaurativa, medidas restaurativas, reparación territorial, mejoramiento integral barrial, mejoramiento integral barrios, renovación barrios río, Plan Estratégico Habitacional, política pública protección moradores, gestión riesgo desastres, mitigación riesgo, </text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p> </text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce8"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro3">
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Medellín es territorio de paz (Sectorial)</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Medellín será ejemplo de territorialización de paz.</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Medellín necesita vincularse con el programa Barrios de Paz, adscrito en el Plan Nacional de Desarrollo 2022-2026.</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Programa Barrios Paz</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p> </text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce8"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro5">
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Convivencia, seguridad y cuidado de la vida (Sectorial)</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Multidimensionalidad y multi-sectorialidad en la arquitectura institucional, como estrategias para atender los problemas de violencia, convivencia y seguridad. En consecuencia, actuar desde la integración de las distintas secretarías para el diseño, la revisión y la garantía de activación de todas las rutas y mecanismos de protección posibles.</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Enfoques de la seguridad desde la perspectiva de género, diversidad sexual, etnoculturalidad, salud pública, entre otras dimensiones. Énfasis en la coordinación entre las secretarías de Inclusión social, mujeres, juventudes y Derechos Humanos, así como la arquitectura institucional relacionada con la justicia restaurativa y su descentralización.</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>perspectiva género, enfoque género, perspectiva etnoculturalidad, enfoque etnoculturalidad, perspectiva salud pública, enfoque etnoculturalidad, justicia restaurativa, medidas restaurativas</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p> </text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce8"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro5">
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Medellín actualiza su planeación y fortalece la participación (Sectorial)</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Reparación del daño a víctimas de la corrupción en el presupuesto participativo. Incorporar un enfoque restaurativo y de víctimas para reconocer y superar los daños ocasionados por la corrupción del presupuesto participativo, y los daños ocasionados al derecho a la participación y al debilitamiento de la organización social y comunitaria en las comunas.</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Garantía de derecho a la verdad y reconocimiento de responsabilidades por la corrupción en el presupuesto participativo, que lleve al esclarecimiento de los hechos, la identificación de responsables y el establecimiento de los daños causados a los territorios y comunidades</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Corrupción, Corrupción presupuesto participativo</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p> </text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce8"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro5">
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Medellín actualiza su planeación y fortalece la participación (Sectorial)</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Reparación del daño a víctimas de la corrupción en el presupuesto participativo. Incorporar un enfoque restaurativo y de víctimas para reconocer y superar los daños ocasionados por la corrupción del presupuesto participativo, y los daños ocasionados al derecho a la participación y al debilitamiento de la organización social y comunitaria en las comunas.</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Generación de una ruta de reparación a las comunidades víctimas de la corrupción y restauración del derecho a la participación ciudadana en el marco del presupuesto participativo.</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>reparación víctimas corrupción presupuesto participativo, restauración derecho participación ciudadana presupuesto participativo</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p> </text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce8"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro5">
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Medellín actualiza su planeación y fortalece la participación (Sectorial)</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Reparación del daño a víctimas de la corrupción en el presupuesto participativo. Incorporar un enfoque restaurativo y de víctimas para reconocer y superar los daños ocasionados por la corrupción del presupuesto participativo, y los daños ocasionados al derecho a la participación y al debilitamiento de la organización social y comunitaria en las comunas.</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Garantía de no repetición a través del compromiso de la administración municipal de la acción sin daño.</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Garantía no repetición presupuesto participativo, acción sin daño presupuesto participativo</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p> </text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce8"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro5">
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Territorio y hábitat (Sectorial)</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Implementar política de mejoramiento integral de barrios</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Mejoramiento integral de barrios, priorizando legalización de predios, mitigación del riesgo, mejoramiento integral de la vivienda con acceso a servicios públicos domiciliarios y mejoramiento del hábitat; para avanzar en garantía, protección y respeto pleno de los derechos a la vivienda y el hábitat. Garantizar seguridad jurídica de la tenencia.</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>mejoramiento integral barrial, mejoramiento integral barrios, renovación barrios río, legalización de predios, gestión riesgo desastres, mitigación riesgo, mejoramiento integral vivienda, servicios públicos domiciliarios, mejoramiento del hábitat</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p> </text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce8"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro2">
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Territorio y hábitat (Sectorial)</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Implementar política de mejoramiento integral de barrios</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Atender el déficit cuantitativo de vivienda, con programas que realmente permitan el acceso a personas en estratos 1 y 2, atendiendo los principios de gastos soportables y asequibilidad, según la normatividad vigente sobre el derecho a la vivienda digna y adecuada.</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Atender déficit cuantitativo de vivienda, acceso vivienda estratos 1 y 2, (sinónimos)</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p> </text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce8"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro2">
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Territorio y hábitat (Sectorial)</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Implementar política de mejoramiento integral de barrios</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Desarrollar e implementar mayor control al incremento abrupto y desmesurado en cargas tributarias relacionadas con la vivienda; así como de los abusos especulativos del sector público y privado en el precio del suelo y de la vivienda.</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>control cargas tributarias, control especulación suelo vivienda</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p> </text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce8"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro2">
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Territorio y hábitat (Sectorial)</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Implementar política de mejoramiento integral de barrios</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Revisar el Macroproyecto Río Norte, y cambiar el tratamiento de renovación para los barrios del costado oriental del río, reformulando los improcedentes Planes Parciales, debido a las graves afectaciones sociales que no hacerlo traería para el sector nororiental de la ciudad.</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>mejoramiento integral barrial, mejoramiento integral barrios, renovación barrios río</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p> </text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce8"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro9">
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Territorio y hábitat (Sectorial)</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Implementar política de mejoramiento integral de barrios</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Dotación en infraestructura para agua potable y alcantarillado en barrios populares para el logro de cobertura universal de estos servicios públicos en la Zona Nororiental.</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Dotación agua potable barrios populares, Dotación alcantarillado barrios populares</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p> </text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce8"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro5">
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Empleo digno y generación de ingresos (Poblacional)</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Saldar la deuda histórica con las y los trabajadores domésticos, a través de estrategias para el reconocimiento de su valor social, la garantía de una remuneración justa, y su efectiva reglamentación. Fortalecer los lineamientos jurídicos, sociales, políticos y económicos que dignifican la laboral del trabajo doméstico.</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Reglamentar la Ley 1496 de 2011 sobre Equidad Salarial para garantizar la igualdad de remuneración en el trabajo doméstico, una profesión feminizada y minusvalorada socialmente.</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Equidad Salarial trabajo doméstico</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p> </text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce9"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro10">
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Empleo digno y generación de ingresos (Poblacional)</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Saldar la deuda histórica con las y los trabajadores domésticos, a través de estrategias para el reconocimiento de su valor social, la garantía de una remuneración justa, y su efectiva reglamentación. Fortalecer los lineamientos jurídicos, sociales, políticos y económicos que dignifican la laboral del trabajo doméstico.</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Fortalecer la inspección laboral en el servicio doméstico, incluyendo la inspección por discriminación. Diseñar participativamente (con organizaciones sindicales) una estrategia de fortalecimiento multidimensional de la inspección laboral en el servicio doméstico formal e informal: inspección preventiva con seguimiento, plan de visitas de oficio, vigilancia en salud ocupacional a las empresas y hogares con servicio doméstico.</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>servicio doméstico inspección laboral </text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p> </text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce9"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro5">
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Empleo digno y generación de ingresos (Poblacional)</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Saldar la deuda histórica con las y los trabajadores domésticos, a través de estrategias para el reconocimiento de su valor social, la garantía de una remuneración justa, y su efectiva reglamentación. Fortalecer los lineamientos jurídicos, sociales, políticos y económicos que dignifican la laboral del trabajo doméstico.</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Incluir dentro de la legislación interna la protección a trabajadoras domésticas migrantes, lo que se contempla en el Convenio 189 de la Organización Internacional del Trabajo (OIT).</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>servicio doméstico legislación interna protecciones </text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p> </text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce9"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro5">
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Empleo digno y generación de ingresos (Poblacional)</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Saldar la deuda histórica con las y los trabajadores domésticos, a través de estrategias para el reconocimiento de su valor social, la garantía de una remuneración justa, y su efectiva reglamentación. Fortalecer los lineamientos jurídicos, sociales, políticos y económicos que dignifican la laboral del trabajo doméstico.</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Impulsar la formalización laboral. Estrategia concertada con organizaciones sindicales para generar un proceso de formalización laboral en el servicio doméstico, y hacer especial vigilancia y control a empresas, asociaciones, fundaciones y en general a la tercerización e intermediación laboral legal e ilegal del sector.</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>servicio doméstico formalización laboral </text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p> </text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce9"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro5">
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Empleo digno y generación de ingresos (Poblacional)</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Saldar la deuda histórica con las y los trabajadores domésticos, a través de estrategias para el reconocimiento de su valor social, la garantía de una remuneración justa, y su efectiva reglamentación. Fortalecer los lineamientos jurídicos, sociales, políticos y económicos que dignifican la laboral del trabajo doméstico.</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Fomentar el diálogo social en el sector y procesos organizativos. Disfrute de libertad sindical, libertad de asociación y derecho de negociación colectiva.</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string"><text:p>servicio doméstico libertad sindical, servicio doméstico libertad de asociación,</text:p><text:p>servicio doméstico derecho de negociación colectiva </text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p> </text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce9"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro10">
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Empleo digno y generación de ingresos (Poblacional)</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Saldar la deuda histórica con las y los trabajadores domésticos, a través de estrategias para el reconocimiento de su valor social, la garantía de una remuneración justa, y su efectiva reglamentación. Fortalecer los lineamientos jurídicos, sociales, políticos y económicos que dignifican la laboral del trabajo doméstico.</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Implementar una estrategia de sensibilización para el mejoramiento de la situación laboral dirigida a empleadores (organizaciones, empresas y hogares privados), trabajadoras y trabajadores domésticos, inspectoras e inspectores, y comunidad en general, para el reconocimiento de su valor social, la promoción de la formalización laboral, la educación para la contratación, la promoción de un entorno laboral seguro, entre otras.</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>servicio doméstico mejoramiento, servicio doméstico situación laboral, servicio doméstico valor social, servicio doméstico formalización laboral, servicio doméstico entorno laboral seguro</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p> </text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce9"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro5">
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Empleo digno y generación de ingresos (Poblacional)</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Saldar la deuda histórica con las y los trabajadores domésticos, a través de estrategias para el reconocimiento de su valor social, la garantía de una remuneración justa, y su efectiva reglamentación. Fortalecer los lineamientos jurídicos, sociales, políticos y económicos que dignifican la laboral del trabajo doméstico.</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Desarrollar un canal de comunicación inmediato y efectivo para la información de empleadores y trabajadoras(es) domésticos, así como para la recepción de denuncias que provoquen inspección. En particular, se requiere promover mecanismos para eliminar la violencia de género en esta relación laboral que se desarrolla en el ámbito de lo privado.</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>servicio doméstico comunicación empleadores trabajadoras, servicio doméstico inspección laboral, servicio doméstico eliminar violencia género</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p> </text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce9"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro5">
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Empleo digno y generación de ingresos (Poblacional)</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Saldar la deuda histórica con las y los trabajadores domésticos, a través de estrategias para el reconocimiento de su valor social, la garantía de una remuneración justa, y su efectiva reglamentación. Fortalecer los lineamientos jurídicos, sociales, políticos y económicos que dignifican la laboral del trabajo doméstico.</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Impulsar la asociación desde figuras empresariales, promoviendo, no solo mejores condiciones laborales y la capacidad para hacerle seguimiento, sido además el empoderamiento desde una figura empresarial para la cualificación del trabajo.</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>servicio doméstico mejoramiento, servicio doméstico cualificación del trabajo</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p> </text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce9"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro2">
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Economía solidaria, y desarrollo económico para el cuidado</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Sistema Distrital de Cuidado de Medellín - SDCM</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Recibir, entender y desarrollar lo que quedó en el diseño del SDCM.</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Sistema Distrital Cuidado Medellín</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p> </text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce9"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro2">
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Economía solidaria, y desarrollo económico para el cuidado</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Sistema Distrital de Cuidado de Medellín - SDCM</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Pedagogía sobre el SDCM. Diseñar y activar una movilización gubernamental y ciudadana tendiente a la valoración de la economía del cuidado y al SDCM.</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Sistema Distrital Cuidado Medellín</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p> </text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce9"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro2">
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Economía solidaria, y desarrollo económico para el cuidado</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Sistema Distrital de Cuidado de Medellín - SDCM</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Institucionalizar un espacio de relacionamiento permanente con el Sistema Nacional de Cuidado.</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Institucionalizar Sistema Nacional Cuidado</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p> </text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce9"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro2">
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Economía solidaria, y desarrollo económico para el cuidado</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Sistema Distrital de Cuidado de Medellín - SDCM</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Revisión y mejoramiento continuo en la aplicación del trazador presupuestal de género en todas las secretarías y su conjugación con la perspectiva de economía del cuidado. </text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>aplicación trazador presupuestal género</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p> </text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce9"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro2">
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Economía solidaria, y desarrollo económico para el cuidado</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Sistema Distrital de Cuidado de Medellín - SDCM</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Gestión de recursos de Cooperación Internacional, Nacional, privados y gubernamentales para el desarrollo y fortalecimiento del Sistema Distrital de Cuidado de Medellín.</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p><text:s/>Sistema Distrital Cuidado Medellín</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p> </text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce9"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro2">
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Economía solidaria, y desarrollo económico para el cuidado</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Sistema Distrital de Cuidado de Medellín - SDCM</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Asignación presupuestal para el desarrollo del Plan de Acción de la Política Pública de Cuidadores articulada al Sistema Distrital de Cuidado.</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Política Pública Cuidadores</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p> </text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce9"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro2">
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Economía solidaria, y desarrollo económico para el cuidado</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Sistema Distrital de Cuidado de Medellín - SDCM</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Continuar los procesos de caracterización de las poblaciones demandantes de cuidado y la de cuidadoras, cuidadores y asistentes personales, lo mismo que los servicios de oferta y demanda de cuidado,</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>caracterización poblaciones demandantes de cuidado, caracterización cuidadoras cuidadores asistentes personales</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p> </text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce9"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro9">
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Cultura para la transformación</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Potenciar la política pública de Cultura Viva Comunitaria en diálogo con el Ministerio de Cultura del Gobierno nacional, para el fomento y la promoción del arte y la cultura y para el alcance de la paz en Medellín.</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p> </text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>política pública de Cultura Viva Comunitaria</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p> </text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce9"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro9">
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Educación incluyente e intercultural</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Garantía del derecho a la educación para niños, niñas y jóvenes (NNJ) con mayores condiciones de vulnerabilidad: migrantes, víctimas del conflicto, extraedad, con necesidades específicas, entre otros.</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Seguimiento a las rutas de acceso a los núcleos educativos para las garantías del derecho a la educación en NNJ.</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Seguimiento rutas de acceso </text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p> </text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce9"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro9">
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Educación incluyente e intercultural</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Garantía del derecho a la educación para niños, niñas y jóvenes (NNJ) con mayores condiciones de vulnerabilidad: migrantes, víctimas del conflicto, extraedad, con necesidades específicas, entre otros.</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Estrategias para la permanencia escolar: ampliación del cupo del tiquete estudiantil, ampliación del cupo del programa de alimentación escolar.</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string"><text:p><text:span text:style-name="T2">permanencia escolar, tiquete estudiantil, programa de alimentación escolar</text:span> </text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p> </text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce9"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro9">
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Educación incluyente e intercultural</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Garantía del derecho a la educación para niños, niñas y jóvenes (NNJ) con mayores condiciones de vulnerabilidad: migrantes, víctimas del conflicto, extraedad, con necesidades específicas, entre otros.</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Ampliar la oferta y cobertura de modelos de educación flexible de educación.</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>modelos educación flexible</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p> </text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce9"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro9">
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Educación incluyente e intercultural</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Garantía del derecho a la educación para niños, niñas y jóvenes (NNJ) con mayores condiciones de vulnerabilidad: migrantes, víctimas del conflicto, extraedad, con necesidades específicas, entre otros.</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Mayor veeduría de los casos de acoso y violencias sexuales a NNJ, a partir de núcleos educativos (Acuerdo 0036-2011 y ley 1620).</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>veeduría casos de acoso y violencias sexuales</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p> </text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce9"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro5">
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Salud pública, integral y holística</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Garantizar la atención y la prevención en salud general y especializada en barrios populares de Medellín. Promoción de la salud, prevención de la enfermedad y el cuidado integral de individuos, familias y comunidad en general incluyendo <text:s/>incluyendo obstetricia, pediatría, nutrición, salud mental, salud sexual y reproductiva, entre otras.</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p> </text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>prevención salud general, atención salud general, prevención salud <text:s/>especializada, atención salud <text:s/>especializada</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p> </text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce9"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro12" table:number-rows-repeated="1048540">
+     <table:table-cell table:number-columns-repeated="6"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro12">
+     <table:table-cell table:number-columns-repeated="6"/>
+    </table:table-row>
+   </table:table>
+   <table:named-expressions/>
+  </office:spreadsheet>
+ </office:body>
+</office:document>

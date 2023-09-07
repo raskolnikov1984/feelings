@@ -3,9 +3,10 @@ from nltk.tokenize import sent_tokenize, word_tokenize
 import nltk
 import csv
 
+__all__ = ['ProcessLookupError']
+
 try:
     nltk.data.find('tokenizers/punkt')
-    print("El modelo 'punkt' de NLTK está disponible en el sistema.")
 except LookupError:
     print("El modelo 'punkt' de NLTK no está disponible en tu sistema. \
     Debes descargarlo.")
@@ -19,10 +20,11 @@ class ProcesarTexto:
     "Class for the processing analisys of cloud word"
     __name__ = 'feelings.process_cloud_word'
 
-    def __init__(self, text):
-        pass
+    def __init__(self, ruta_propuesta, nube_palabras):
+        self.ruta_propuesta = ruta_propuesta
+        self.nube_palabras = nube_palabras
 
-    def leer_archivo_texto(ruta_archivo):
+    def leer_archivo_texto(self):
         """
         Lee un archivo de texto plano y devuelve su contenido.
         ..ruta_archivo (str): La ruta del archivo de texto a leer.
@@ -34,7 +36,7 @@ class ProcesarTexto:
         print(contenido_del_archivo)
         """
         try:
-            with open(ruta_archivo, 'r', encoding='utf-8') as archivo:
+            with open(self.ruta_propuesta, 'r', encoding='utf-8') as archivo:
                 contenido = archivo.read()
             return contenido
         except FileNotFoundError:
@@ -42,7 +44,7 @@ class ProcesarTexto:
         except Exception as e:
             return f"Error al leer el archivo: {str(e)}"
 
-    def leer_nube_palabras(self, nombre_archivo):
+    def leer_nube_palabras(self):
         """
         Recibe  un archivo csv, el cual consta de 3
         columnas:
@@ -56,7 +58,7 @@ class ProcesarTexto:
         Retorna una lista de lista con cada fila leída del archivo csv.
         """
         datos = []
-        with open(nombre_archivo, mode='r', newline='') as archivo:
+        with open(self.nube_palabras, mode='r', newline='') as archivo:
             lector_csv = csv.reader(archivo, delimiter=':')
             for fila in lector_csv:
                 datos.append(fila)
@@ -94,7 +96,7 @@ class ProcesarTexto:
 
         return propuesta_consolidada
 
-    def tokenizar_texto(texto, tipo='palabras', idioma='spanish'):
+    def tokenizar_texto(self, texto, tipo='palabras', idioma='spanish'):
         """
         Tokeniza un texto en oraciones o palabras.
         Recibe:
@@ -114,7 +116,3 @@ class ProcesarTexto:
         else:
             raise ValueError(
                 "El tipo de tokenización debe ser 'palabras' o 'oraciones'.")
-
-
-if __name__ == "__main__":
-    print("Iniciando análisis...")

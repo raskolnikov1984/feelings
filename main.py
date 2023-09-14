@@ -20,17 +20,17 @@ if __name__ == "__main__":
         medellin_creemos_en_vos, nube_palabras)
     programa_grobierno_primera_propuesta = \
         primera_propuesta.leer_archivo_texto()
-    print(programa_grobierno_primera_propuesta)
+    # print(type(programa_grobierno_primera_propuesta))
+    print(primera_propuesta.tokenizar_texto(programa_grobierno_primera_propuesta, 'oraciones')[2])
+    # nube_palabras = primera_propuesta.leer_nube_palabras()
+    # nube_estructurada = primera_propuesta.estructurar_nube_palabras(
+    #     nube_palabras)
 
-    nube_palabras = primera_propuesta.leer_nube_palabras()
-    nube_estructurada = primera_propuesta.estructurar_nube_palabras(
-        nube_palabras)
+    # time.sleep(3)
+    # print(nube_estructurada)
 
-    time.sleep(3)
-    print(nube_estructurada)
-
-    print(nube_estructurada.values())
-    for tema, valor in nube_estructurada.items():
-        print(tema+'\n')
-        print(str(valor)+'\n')
-        time.sleep(2)
+    # print(nube_estructurada.values())
+    # for tema, valor in nube_estructurada.items():
+    #     print(tema+'\n')
+    #     print(str(valor)+'\n')
+    #     time.sleep(2)

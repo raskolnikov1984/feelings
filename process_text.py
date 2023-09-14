@@ -1,5 +1,10 @@
 from nltk.tokenize import sent_tokenize, word_tokenize
-# from nltk.corpus import stopwords
+# Palabras Vacías
+from nltk.corpus import stopwords
+# Raíz de una palabra
+from nltk.stem import PorterStemmer
+# Obtener el lema de una palabra
+from nltk.stem import WordNetLemmatizer
 import nltk
 import csv
 
@@ -116,3 +121,90 @@ class ProcesarTexto:
         else:
             raise ValueError(
                 "El tipo de tokenización debe ser 'palabras' o 'oraciones'.")
+
+    def procesar_unidad_sentido():
+        """
+        Recibe una unidad de Sentido (Oración, texto con sentido).
+        Limpia las palabras vacías (palbras que no aportan sentido).
+        Recibe:
+        texto (str): El texto que va a limpiar.
+        Retorna una lista procesada con las palabras de la unidad de sentido
+        """
+
+        """
+        TODO: Verificar necidad de identificar partes del habla
+        Sustanvito, Pronombre, Adjetivo, Verbo...
+        """
+        oracion = ""
+        destilador = PorterStemmer()
+        # lematizador = WordNetLemmatizer()
+        palabras_vacias = set(stopwords.words("spanish"))
+        palabras_oracion = word_tokenize(oracion)
+
+        oracion_filtrada = [destilador.stem(palabra.lower())
+                            for palabra in palabras_oracion if
+                            palabra.casefold() not in palabras_vacias]
+
+        # oracion_lematizada = [lematizador.lemmatize(palabra.lower())
+        #                       for palabra in palabras_oracion if
+        #                       palabra.casefold() not in palabras_vacias]
+
+        if not oracion_filtrada:
+            return
+        return oracion_filtrada
+
+    def match_palabras(nube_palabras: set, programa_grobierno: set) -> set:
+        return nube_palabras.intersection(programa_grobierno)
+
+    def son_disjuntos(nube_palabras: set, programa_grobierno: set) -> bool:
+        return nube_palabras.isdisjoint(programa_grobierno)
+
+
+"""
+TODO: Realizar busquedas de palabras utilizando teoria de conjuntos.
+
+palabras_destiladas = [
+'gran', 'alianza', 'primera',
+'infancia', 'medellín', 'haremo',
+'travé', 'diversa', 'secretaría',
+'departamento', 'administrativo',
+'alcaldía', 'medellín', ',',
+'junto', 'sector', 'académico',
+',', 'empresarial', ',',
+'civil', ',', 'comunitario',
+',', ',', 'consolidar', 'distrito',
+'ciudad', 'promuev', 'desarrollo',
+'infantil', 'manera', 'integr', '.'
+]
+In [55]: {'empresarial','gran','ciudad'}.intersection(palabras_destiladas)
+Out[55]: {'ciudad', 'empresarial', 'gran'}
+
+
+busquedas de unidades de sentido compuestas
+
+In [54]: 'empresarial' and 'gran' and 'ciudad' in stemmed_words
+Out[54]: True
+"""
+
+"""
+Hacer una trama de dispersión
+Puedes usar un parcela de dispersión para ver cuánto aparece una palabra en
+particular y dónde aparece. Hasta ahora, hemos buscado "man" y "woman",
+pero sería interesante ver cuánto se usan esas palabras
+en comparación con sus sinónimos:
+
+text8.dispersion_plot(
+...     ["woman", "lady", "girl", "gal", "man", "gentleman", "boy", "guy"]
+... )
+"""
+
+"""
+import spacy
+
+nlp = spacy.load('es_core_news_sm')
+texto = "Texto"
+doc = nlp(texto)
+
+for oracion in doc.sents:
+print(oracion.text)
+"""

@@ -20,8 +20,9 @@ if __name__ == "__main__":
         medellin_creemos_en_vos, nube_palabras)
     programa_grobierno_primera_propuesta = \
         primera_propuesta.leer_archivo_texto()
-    # print(type(programa_grobierno_primera_propuesta))
-    print(primera_propuesta.tokenizar_texto(programa_grobierno_primera_propuesta, 'oraciones')[2])
+
+    print(primera_propuesta.tokenizar_texto(
+        programa_grobierno_primera_propuesta, 'oraciones')[2])
     # nube_palabras = primera_propuesta.leer_nube_palabras()
     # nube_estructurada = primera_propuesta.estructurar_nube_palabras(
     #     nube_palabras)

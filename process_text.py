@@ -4,9 +4,11 @@ from nltk.corpus import stopwords
 # Raíz de una palabra
 from nltk.stem import PorterStemmer
 # Obtener el lema de una palabra
-from nltk.stem import WordNetLemmatizer
+# from nltk.stem import WordNetLemmatizer
 import nltk
-import csv
+import pandas as pd
+import re
+# import csv
 
 __all__ = ['ProcessLookupError']
 
@@ -29,77 +31,115 @@ class ProcesarTexto:
         self.ruta_propuesta = ruta_propuesta
         self.nube_palabras = nube_palabras
 
-    def leer_archivo_texto(self):
-        """
-        Lee un archivo de texto plano y devuelve su contenido.
-        ..ruta_archivo (str): La ruta del archivo de texto a leer.
-        Retorna str: El contenido del archivo de texto.
-
-        # Ejemplo de uso
-        ruta_del_archivo = "mi_archivo.txt"
-        contenido_del_archivo = leer_archivo_texto(ruta_del_archivo)
-        print(contenido_del_archivo)
-        """
+    def leer_archivo_por_lineas(self):
+        lineas = []
         try:
-            with open(self.ruta_propuesta, 'r', encoding='utf-8') as archivo:
-                contenido = archivo.read()
-            return contenido
+            with open(self.ruta_propuesta, 'r') as archivo:
+                lineas = archivo.readlines()
+                # linea = linea.rstrip('\n')
+            return lineas
         except FileNotFoundError:
-            return "El archivo no fue encontrado."
+            print(f"El archivo '{self.ruta_propuesta}' no se encontró.")
         except Exception as e:
-            return f"Error al leer el archivo: {str(e)}"
+            print(f"Ocurrió un error: {str(e)}")
 
-    def leer_nube_palabras(self):
+    def extraer_cadenas_entre_corchetes(self, cadena):
         """
-        Recibe  un archivo csv, el cual consta de 3
-        columnas:
-
-        ...Tema:
-        ...Propuesta principal:
-        ...Propuesta específica:
-        ...Secuencia de palabras:
-        ...Puntos:
-
-        Retorna una lista de lista con cada fila leída del archivo csv.
+        Utilizamos una expresión regular para encontrar todas
+        las cadenas entre corchetes
         """
-        datos = []
-        with open(self.nube_palabras, mode='r', newline='') as archivo:
-            lector_csv = csv.reader(archivo, delimiter=':')
-            for fila in lector_csv:
-                datos.append(fila)
-        return datos
+        patrón = r'\[([^\]]+)\]'
+        cadenas_entre_corchetes = re.findall(patrón, cadena)
 
-    def estructurar_nube_palabras(self, datos):
-        """
-        Recibe una lista de listas de string que obtine de la función
-        leer_nube_palabras.
+        return cadenas_entre_corchetes
 
-        Retorna un diccionario de la forma:
-        {'Tema': {'Propuesta principal': {'Propuesta específica':
-        'Secuencia de palabras'}}}
-        """
-        propuesta_consolidada = {}
-        for dato in datos:
-            tema = dato[0]
-            propuesta_principal = dato[1]
-            propuesta_especifica = dato[2]
-            secuencia_palabras = dato[3]
-            temas = propuesta_consolidada.keys()
-            if dato[0] not in temas:
-                propuesta_consolidada[tema] = {
-                    propuesta_principal: {
-                        propuesta_especifica:
-                        secuencia_palabras}}
+    # def leer_archivo_texto(self):
+    #     """
+    #     Lee un archivo de texto plano y devuelve su contenido.
+    #     ..ruta_archivo (str): La ruta del archivo de texto a leer.
+    #     Retorna str: El contenido del archivo de texto.
+
+    #     # Ejemplo de uso
+    #     ruta_del_archivo = "mi_archivo.txt"
+    #     contenido_del_archivo = leer_archivo_texto(ruta_del_archivo)
+    #     print(contenido_del_archivo)
+    #     """
+    #     try:
+    #         with open(self.ruta_propuesta, 'r', encoding='utf-8') as archivo:
+    #             contenido = archivo.read()
+    #         return contenido
+    #     except FileNotFoundError:
+    #         return "El archivo no fue encontrado."
+    #     except Exception as e:
+    #         return f"Error al leer el archivo: {str(e)}"
+
+    def cargar_columna_csv(self, nombre_columna='secuencia_palabras'):
+        try:
+            # Lee el archivo CSV en un DataFrame
+            df = pd.read_csv(self.nube_palabras, delimiter=',')
+            # Verifica si la columna especificada existe en el DataFrame
+            if nombre_columna in df.columns:
+                # Carga la columna en un arreglo
+                columna_arreglo = df[nombre_columna].tolist()
+                return columna_arreglo
             else:
-                if propuesta_principal not in propuesta_consolidada[tema]:
-                    propuesta_consolidada[tema][propuesta_principal] = {
-                            propuesta_especifica:
-                            secuencia_palabras}
-                else:
-                    propuesta_consolidada[tema][propuesta_principal][propuesta_especifica] = \
-                        secuencia_palabras
+                return None  # La columna no existe en el archivo CSV
+        except Exception as e:
+            print(f"Error al cargar el archivo CSV: {str(e)}")
+            return None
 
-        return propuesta_consolidada
+    # def leer_nube_palabras(self):
+    #     """
+    #     Recibe  un archivo csv, el cual consta de 3
+    #     columnas:
+
+    #     ...Tema:
+    #     ...Propuesta principal:
+    #     ...Propuesta específica:
+    #     ...Secuencia de palabras:
+    #     ...Puntos:
+
+    #     Retorna una lista de lista con cada fila leída del archivo csv.
+    #     """
+    #     datos = []
+    #     with open(self.nube_palabras, mode='r', newline='') as archivo:
+    #         lector_csv = csv.reader(archivo, delimiter=':')
+    #         for fila in lector_csv:
+    #             datos.append(fila)
+    #     return datos
+
+    # def estructurar_nube_palabras(self, datos):
+    #     """
+    #     Recibe una lista de listas de string que obtine de la función
+    #     leer_nube_palabras.
+
+    #     ..pp: Propuesta Principal
+    #     ..pe: Propuesta Específica
+    #     ..sc: Secuencia Palabras
+
+    #     Retorna un diccionario de la forma:
+    #     {'Tema': {'Propuesta principal': {'Propuesta específica':
+    #     'Secuencia de palabras'}}}
+    #     """
+    #     pc = {}
+    #     for dato in datos:
+    #         tema = dato[0]
+    #         pp = dato[1]
+    #         pe = dato[2]
+    #         sp = dato[3]
+    #         temas = pc.keys()
+    #         if dato[0] not in temas:
+    #             pc[tema] = {
+    #                 pp: {
+    #                     pe: sp}}
+    #         else:
+    #             if pp not in pc[tema]:
+    #                 pc[tema][pp] = {
+    #                     pe: sp}
+    #             else:
+    #                 pc[tema][pp][pe] = \
+    #                     sp
+    #     return pc
 
     def tokenizar_texto(self, texto, tipo='palabras', idioma='spanish'):
         """
@@ -114,6 +154,7 @@ class ProcesarTexto:
         Returns:
         list: Una lista de oraciones o palabras tokenizadas.
         """
+
         if tipo == 'palabras':
             return word_tokenize(texto, language=idioma)
         elif tipo == 'oraciones':
@@ -159,6 +200,7 @@ class ProcesarTexto:
     def son_disjuntos(nube_palabras: set, programa_grobierno: set) -> bool:
         return nube_palabras.isdisjoint(programa_grobierno)
 
+    
 
 """
 TODO: Realizar busquedas de palabras utilizando teoria de conjuntos.

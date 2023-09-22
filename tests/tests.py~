@@ -1,0 +1,9 @@
+from process_text import ProcesarTexto
+import unittest
+
+class TestProcesarTexto(unittest.TestCase):
+    def test_1(self):
+        return
+
+if __name__ == 'main':
+    unittest.main()

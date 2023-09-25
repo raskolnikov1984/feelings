@@ -66,6 +66,14 @@ class TestProcesarTexto(unittest.TestCase):
         with self.assertRaises(ValueError):
             self.procesador.tokenizar_texto(texto, tipo='invalido')
 
+    def test_flujo_principal(self):
+
+        procesador = ProcesarTexto(self.medellin_creemos_en_vos,
+                                   self.nube_palabras)
+        coincidencias = procesador.run()
+
+        self.assertIsInstance(coincidencias, list)
+
 
 if __name__ == 'main':
     unittest.main()

@@ -53,26 +53,6 @@ class ProcesarTexto:
 
         return cadenas_entre_corchetes
 
-    # def leer_archivo_texto(self):
-    #     """
-    #     Lee un archivo de texto plano y devuelve su contenido.
-    #     ..ruta_archivo (str): La ruta del archivo de texto a leer.
-    #     Retorna str: El contenido del archivo de texto.
-
-    #     # Ejemplo de uso
-    #     ruta_del_archivo = "mi_archivo.txt"
-    #     contenido_del_archivo = leer_archivo_texto(ruta_del_archivo)
-    #     print(contenido_del_archivo)
-    #     """
-    #     try:
-    #         with open(self.ruta_propuesta, 'r', encoding='utf-8') as archivo:
-    #             contenido = archivo.read()
-    #         return contenido
-    #     except FileNotFoundError:
-    #         return "El archivo no fue encontrado."
-    #     except Exception as e:
-    #         return f"Error al leer el archivo: {str(e)}"
-
     def cargar_columna_csv(self, nombre_columna='secuencia_palabras'):
         try:
             # Lee el archivo CSV en un DataFrame
@@ -87,6 +67,101 @@ class ProcesarTexto:
         except Exception as e:
             print(f"Error al cargar el archivo CSV: {str(e)}")
             return None
+
+    def tokenizar_texto(self, texto, tipo='palabras', idioma='spanish'):
+        """
+        Tokeniza un texto en oraciones o palabras.
+        Recibe:
+        texto (str): El texto que se va a tokenizar.
+        tipo (str): El tipo de tokenización ('oraciones' o 'palabras').
+        Por defecto, es 'palabras'.
+        idioma (str): El idioma en el que se encuentra el texto.
+        Por defecto, es 'spanish'.
+
+        Returns:
+        list: Una lista de oraciones o palabras tokenizadas.
+        """
+
+        if tipo == 'palabras':
+            return word_tokenize(texto, language=idioma)
+        elif tipo == 'oraciones':
+            return sent_tokenize(texto, language=idioma)
+        else:
+            raise ValueError(
+                "El tipo de tokenización debe ser 'palabras' o 'oraciones'.")
+
+    def destilar_secuencia_palabras(self, secuencia_palabras: list):
+        secuencias = [
+            set(self.procesar_unidad_sentido(s)) for s in secuencia_palabras
+        ]
+
+        return secuencias
+
+    def procesar_unidad_sentido(self, oracion):
+        """
+        Recibe una unidad de Sentido (Oración, texto con sentido).
+        Limpia las palabras vacías (palbras que no aportan sentido).
+        Recibe:
+        texto (str): El texto que va a limpiar.
+        Retorna una lista procesada con las palabras de la unidad de sentido
+        """
+
+        """
+        TODO: Verificar necidad de identificar partes del habla
+        Sustanvito, Pronombre, Adjetivo, Verbo...
+        """
+        destilador = PorterStemmer()
+        # lematizador = WordNetLemmatizer()
+        palabras_vacias = set(stopwords.words("spanish"))
+        palabras_oracion = word_tokenize(oracion)
+
+        oracion_filtrada = [destilador.stem(palabra.lower())
+                            for palabra in palabras_oracion if
+                            palabra.casefold() not in palabras_vacias]
+
+        # oracion_lematizada = [lematizador.lemmatize(palabra.lower())
+        #                       for palabra in palabras_oracion if
+        #                       palabra.casefold() not in palabras_vacias]
+
+        if not oracion_filtrada:
+            return
+        return oracion_filtrada
+
+    def match_palabras(self, nube_palabras: set, programa_grobierno: set) -> set:
+        return nube_palabras.intersection(programa_grobierno)
+
+    def son_disjuntos(nube_palabras: set, programa_grobierno: set) -> bool:
+        return nube_palabras.isdisjoint(programa_grobierno)
+
+    def run(self):
+        coincidencias = []
+        texto = self.leer_archivo_por_lineas()
+        secuencia_palabras = self.cargar_columna_csv()
+        secuencia_palabras_destilada = self.destilar_secuencia_palabras(
+            secuencia_palabras)
+
+        for linea in texto:
+            cadena_segmentada = self.extraer_cadenas_entre_corchetes(linea)
+            for oracion in cadena_segmentada:
+                if oracion is not None:
+                    oracion = self.procesar_unidad_sentido(oracion)
+                    if oracion is not None:
+                        oracion_destilada = set(oracion)
+                    if oracion_destilada is not None:
+                        for sc in secuencia_palabras_destilada:
+                            coincidencia = self.match_palabras(
+                                sc, oracion_destilada)
+                            if coincidencia and coincidencia != {','}:
+                                if ',' in coincidencia:
+                                    coincidencia.discard(',')
+                                coincidencias.append(coincidencia)
+
+        raise Exception(coincidencias)
+
+        return coincidencias
+        # for secuencia_palabras
+        # for linea in texto:
+        #     oracion = self.extraer_cadenas_entre_corchetes(linea)
 
     # def leer_nube_palabras(self):
     #     """
@@ -141,66 +216,26 @@ class ProcesarTexto:
     #                     sp
     #     return pc
 
-    def tokenizar_texto(self, texto, tipo='palabras', idioma='spanish'):
-        """
-        Tokeniza un texto en oraciones o palabras.
-        Recibe:
-        texto (str): El texto que se va a tokenizar.
-        tipo (str): El tipo de tokenización ('oraciones' o 'palabras').
-        Por defecto, es 'palabras'.
-        idioma (str): El idioma en el que se encuentra el texto.
-        Por defecto, es 'spanish'.
+        # def leer_archivo_texto(self):
+    #     """
+    #     Lee un archivo de texto plano y devuelve su contenido.
+    #     ..ruta_archivo (str): La ruta del archivo de texto a leer.
+    #     Retorna str: El contenido del archivo de texto.
 
-        Returns:
-        list: Una lista de oraciones o palabras tokenizadas.
-        """
+    #     # Ejemplo de uso
+    #     ruta_del_archivo = "mi_archivo.txt"
+    #     contenido_del_archivo = leer_archivo_texto(ruta_del_archivo)
+    #     print(contenido_del_archivo)
+    #     """
+    #     try:
+    #         with open(self.ruta_propuesta, 'r', encoding='utf-8') as archivo:
+    #             contenido = archivo.read()
+    #         return contenido
+    #     except FileNotFoundError:
+    #         return "El archivo no fue encontrado."
+    #     except Exception as e:
+    #         return f"Error al leer el archivo: {str(e)}"
 
-        if tipo == 'palabras':
-            return word_tokenize(texto, language=idioma)
-        elif tipo == 'oraciones':
-            return sent_tokenize(texto, language=idioma)
-        else:
-            raise ValueError(
-                "El tipo de tokenización debe ser 'palabras' o 'oraciones'.")
-
-    def procesar_unidad_sentido():
-        """
-        Recibe una unidad de Sentido (Oración, texto con sentido).
-        Limpia las palabras vacías (palbras que no aportan sentido).
-        Recibe:
-        texto (str): El texto que va a limpiar.
-        Retorna una lista procesada con las palabras de la unidad de sentido
-        """
-
-        """
-        TODO: Verificar necidad de identificar partes del habla
-        Sustanvito, Pronombre, Adjetivo, Verbo...
-        """
-        oracion = ""
-        destilador = PorterStemmer()
-        # lematizador = WordNetLemmatizer()
-        palabras_vacias = set(stopwords.words("spanish"))
-        palabras_oracion = word_tokenize(oracion)
-
-        oracion_filtrada = [destilador.stem(palabra.lower())
-                            for palabra in palabras_oracion if
-                            palabra.casefold() not in palabras_vacias]
-
-        # oracion_lematizada = [lematizador.lemmatize(palabra.lower())
-        #                       for palabra in palabras_oracion if
-        #                       palabra.casefold() not in palabras_vacias]
-
-        if not oracion_filtrada:
-            return
-        return oracion_filtrada
-
-    def match_palabras(nube_palabras: set, programa_grobierno: set) -> set:
-        return nube_palabras.intersection(programa_grobierno)
-
-    def son_disjuntos(nube_palabras: set, programa_grobierno: set) -> bool:
-        return nube_palabras.isdisjoint(programa_grobierno)
-
-    
 
 """
 TODO: Realizar busquedas de palabras utilizando teoria de conjuntos.

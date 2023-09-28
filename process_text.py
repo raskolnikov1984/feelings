@@ -127,11 +127,23 @@ class ProcesarTexto:
             return
         return oracion_filtrada
 
-    def match_palabras(self, nube_palabras: set, programa_grobierno: set) -> set:
+    def match_palabras(
+            self, nube_palabras: set, programa_grobierno: set) -> set:
         return nube_palabras.intersection(programa_grobierno)
 
     def son_disjuntos(nube_palabras: set, programa_grobierno: set) -> bool:
         return nube_palabras.isdisjoint(programa_grobierno)
+
+    def convertir_a_conjunto(self, lista_de_conjuntos):
+        # Inicializar un conjunto vacío
+        conjunto_resultante = set()
+
+        # Iterar a través de cada conjunto en la lista y
+        # unirlo al conjunto resultante
+        for conjunto in lista_de_conjuntos:
+            conjunto_resultante.update(conjunto)
+
+        return conjunto_resultante
 
     def run(self):
         coincidencias = []
@@ -140,6 +152,8 @@ class ProcesarTexto:
         secuencia_palabras_destilada = self.destilar_secuencia_palabras(
             secuencia_palabras)
 
+        conjunto_secuencia_palabras = self.convertir_a_conjunto(
+            secuencia_palabras_destilada)
         for linea in texto:
             cadena_segmentada = self.extraer_cadenas_entre_corchetes(linea)
             for oracion in cadena_segmentada:
@@ -156,12 +170,30 @@ class ProcesarTexto:
                                     coincidencia.discard(',')
                                 coincidencias.append(coincidencia)
 
-        raise Exception(coincidencias)
+        palabras_contadas = self.contar_palabras(coincidencias)
+        print('\nPalabras que no Aparecen: ',
+              conjunto_secuencia_palabras.difference(palabras_contadas.keys())
+              )
 
         return coincidencias
-        # for secuencia_palabras
-        # for linea in texto:
-        #     oracion = self.extraer_cadenas_entre_corchetes(linea)
+
+    def contar_palabras(self, lista_palabras):
+        # Crear un diccionario para contar las palabras
+        conteo_palabras = {}
+
+        # Iterar a través de la lista de palabras y contar su frecuencia
+        for conjunto in lista_palabras:
+            for palabra in conjunto:
+                if palabra in conteo_palabras:
+                    conteo_palabras[palabra] += 1
+                else:
+                    conteo_palabras[palabra] = 1
+
+        # Imprimir el resultado
+        for palabra, frecuencia in conteo_palabras.items():
+            print(f'"{palabra}" : {frecuencia} veces.')
+
+        return conteo_palabras
 
     # def leer_nube_palabras(self):
     #     """

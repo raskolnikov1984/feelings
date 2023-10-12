@@ -193,7 +193,7 @@ class ProcesarTexto:
 
         frecuencia_palabras = Reporte(conteo_palabras)
         frecuencia_palabras.mostrar_diagrama_de_barras()
-        
+
         # # Imprimir el resultado
         # for palabra, frecuencia in conteo_palabras.items():
         #     print(f'"{palabra}" : {frecuencia} veces.')

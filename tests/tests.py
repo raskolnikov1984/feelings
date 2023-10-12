@@ -5,10 +5,9 @@ import unittest
 class TestProcesarTexto(unittest.TestCase):
     def setUp(self):
         self.nube_palabras = 'data/nube_palabras_base.csv'
-        self.medellin_creemos_en_vos = 'data/paulina_aguinaga.txt'
-        #self.medellin_creemos_en_vos = 'data/medellin_creemos_en_vos.txt'
+        self.propuesta = 'data/albert_yordano_corredor.txt'
         self.procesador = ProcesarTexto(
-            self.medellin_creemos_en_vos, self.nube_palabras)
+            self.propuesta, self.nube_palabras)
 
     def test_1(self):
         """Crear Instancia de ProcesarTexto"""
@@ -69,7 +68,7 @@ class TestProcesarTexto(unittest.TestCase):
 
     def test_flujo_principal(self):
 
-        procesador = ProcesarTexto(self.medellin_creemos_en_vos,
+        procesador = ProcesarTexto(self.propuesta,
                                    self.nube_palabras)
         coincidencias = procesador.run()
 

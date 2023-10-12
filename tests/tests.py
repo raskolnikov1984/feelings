@@ -5,7 +5,8 @@ import unittest
 class TestProcesarTexto(unittest.TestCase):
     def setUp(self):
         self.nube_palabras = 'data/nube_palabras_base.csv'
-        self.medellin_creemos_en_vos = 'data/medellin_creemos_en_vos.txt'
+        self.medellin_creemos_en_vos = 'data/paulina_aguinaga.txt'
+        #self.medellin_creemos_en_vos = 'data/medellin_creemos_en_vos.txt'
         self.procesador = ProcesarTexto(
             self.medellin_creemos_en_vos, self.nube_palabras)
 

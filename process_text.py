@@ -10,6 +10,8 @@ import pandas as pd
 import re
 # import csv
 
+from utils import Reporte
+
 __all__ = ['ProcessLookupError']
 
 try:
@@ -189,9 +191,12 @@ class ProcesarTexto:
                 else:
                     conteo_palabras[palabra] = 1
 
-        # Imprimir el resultado
-        for palabra, frecuencia in conteo_palabras.items():
-            print(f'"{palabra}" : {frecuencia} veces.')
+        frecuencia_palabras = Reporte(conteo_palabras)
+        frecuencia_palabras.mostrar_diagrama_de_barras()
+        
+        # # Imprimir el resultado
+        # for palabra, frecuencia in conteo_palabras.items():
+        #     print(f'"{palabra}" : {frecuencia} veces.')
 
         return conteo_palabras
 
